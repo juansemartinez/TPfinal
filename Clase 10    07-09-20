@@ -1,0 +1,131 @@
+MEDIA QUERYS 
+Dependiendo del medio se habilita o no tal o cual estilo CSS
+Si es un tel celular de forma horizontal, mostrar el navegador de cierta forma. 
+
+
+Operadores Lógicos:
+Si esto pasa Y esto otro pasa O esto sucede Y esto otro = True/False (si se cumple esto devolver esto otro)
+
+"And" "Or" "Not" "Only"
+
+--------
+El resultado de la consulta es Verdadero cuando el tipo de medio (Si se especifica) coincide con el resultado de las expresiones. 
+
+Media Types.
+Describen la categoria de general del dispositivo.
+Salvo que sea Not u Only.
+
+All, 
+Print, 
+SCREEN (el mas usado: medidas de pantalla), 
+Speech (destinado a sintetizador de voz, no se usa nunca).
+
+-------------
+
+Se usan reglas:
+
+2 Condiciones
+
+@media (min-width: 700px) {...}
+@media (min-width: 700px) and (orientation: landscape) // Landscape es apaisada
+
+//////////////////
+
+Listas separadas por COMAS. Las comas son los "OR"
+Los "OR" separan las Querys
+Si cumple: 
+/ Movil, en estado horizontal, pantalla min-with 700px.
+Es igual a:
+/ Movil or en estado horizontal o pantalla min-with 700px.
+
+Otra puede ser:
+@media handheld and (grid) and (min-width: 15em) {...}
+
+///////////////
+
+Operador NOT: Solo afecta a la Query que le sigue, pero no a todas, cuando pasa la coma "or" no afecta.
+
+////
+Proporciones 16:9 cuando las pantallas superan los 1080px
+
+////
+
+Pantallas Monochrome o a color.
+
+Indica el numero de bits 
+
+el 0 generalmente es un "false"
+
+//////
+Orientation:
+Valor: Lanscape / Portrair (en ancho es mayor al alto)
+Medio: bitmap
+Acepta preficos min/max: si.
+
+@media print and (min-resolution: 300dpi) {...}
+
+/////
+
+Scan: POCO USADO
+Valor: progressive / interlace
+Medio: media/tv
+Acepta prefijps min/max: no
+
+Describe el proceso de exploracion de television de los dispositivos de salida 
+
+/////////
+
+Width:
+
+Valor: <lenght>
+Medio: media/visual, media/tactile
+Acepta prefijos min/max
+
+
+Para pantallas ente 500px y 800px.
+
+@media screen (min-width: 500px) and (max-width: 800px).
+
+
+Entrega de Navbar
+Portada.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
